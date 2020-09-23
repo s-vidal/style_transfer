@@ -31,20 +31,20 @@ function App() {
         </div>
       </div>
       <div className="vh-70">
-        <div className="container pt-4 mt-5">
-          <div className="row d-flex justify-content-center">
+        <div className="container pt-5">
+          <div className="row d-flex justify-content-center mt-5">
             <button className="btn btn-danger pl-5 pr-5 pt-2 pb-2">
               Try it Out
             </button>
           </div>
         </div>
         <div className="container pb-5">
-          <div className="row pt-4">
+          <div className="row pt-5">
             <h2>Explenation</h2>
           </div>
           <div className="row pt-3">
-            <p className="">
-              From the authors: "...we present a method which combines the
+            <p>
+              From The authors: "...we present a method which combines the
               flexibility of the neural algorithm of artistic style with the
               speed of fast style transfer networks to allow real-time
               stylization using any content/style image pair. We build upon
@@ -61,10 +61,10 @@ function App() {
           <div className="row pt-5">
             <h2>Example</h2>
             <a
-              className="text-dark ml-3"
+              className="text-dark"
               href="https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb#scrollTo=dqB6aNTLNVkK"
             >
-              <h5 className="mt-2">from TF-Huv Colab</h5>
+              from TF-Huv Colab
             </a>
           </div>
           <div className="row d-flex justify-content-center shadow p-5 mb-5 mt-4 rounded">
@@ -72,15 +72,15 @@ function App() {
               className="ml-2"
               src={require("./img/turtle.png")}
               alt="tf"
-              width="1000"
-              height="330"
+              width="900"
+              height="300"
             ></img>
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row">
-          <h2>Reference</h2>
+          <h2>References</h2>
         </div>
         <div className="row">
           <p className="m-0">
