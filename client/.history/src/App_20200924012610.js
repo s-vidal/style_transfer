@@ -68,7 +68,7 @@ function App() {
         </div>
         <div className="container pb-5 mb-5 pt-5">
           <div className="row pt-4">
-            <h2>Description</h2>
+            <h2>Descriptio</h2>
           </div>
           <div className="row pt-3">
             <p className="">

@@ -46,29 +46,9 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="container pb-5">
-          <div className="row pt-5 d-flex align-items-end">
-            <h2>Example</h2>
-            <a
-              className="text-dark ml-3"
-              href="https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb#scrollTo=dqB6aNTLNVkK"
-            >
-              <h5 className="">from TF-Huv Colab</h5>
-            </a>
-          </div>
-          <div className="row d-flex justify-content-center shadow p-5 mb-5 mt-4 rounded">
-            <img
-              className="ml-2"
-              src={require("./img/turtle.png")}
-              alt="tf"
-              width="100%"
-              height="auto"
-            ></img>
-          </div>
-        </div>
         <div className="container pb-5 mb-5 pt-5">
           <div className="row pt-4">
-            <h2>Description</h2>
+            <h2>Explenation</h2>
           </div>
           <div className="row pt-3">
             <p className="">
