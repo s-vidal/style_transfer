@@ -42,7 +42,7 @@ function App() {
           <div className="row pt-5">
             <h2>Explenation</h2>
           </div>
-          <div className="row pt-5">
+          <div className="row pt-2">
             <p>
               From The authors: "...we present a method which combines the
               flexibility of the neural algorithm of artistic style with the
@@ -73,7 +73,7 @@ function App() {
         </div>
       </div>
       <div className="container">
-        <div className="row mt-5">
+        <div className="row mt-5 pt-5">
           <h2>References</h2>
         </div>
         <div className="row">

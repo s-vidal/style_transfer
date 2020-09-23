@@ -38,11 +38,11 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="container pb-5">
+        <div className="container">
           <div className="row pt-5">
             <h2>Explenation</h2>
           </div>
-          <div className="row pt-5">
+          <div className="row pt-2">
             <p>
               From The authors: "...we present a method which combines the
               flexibility of the neural algorithm of artistic style with the
@@ -57,11 +57,11 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="container pb-5">
+        <div className="container sha">
           <div className="row pt-5">
             <h2>Example</h2>
           </div>
-          <div className="row d-flex justify-content-center shadow p-5 mb-5 mt-5 rounded">
+          <div className="row pt-5 d-flex justify-content-center ">
             <img
               className="ml-2"
               src={require("./img/turtle.png")}
@@ -73,7 +73,7 @@ function App() {
         </div>
       </div>
       <div className="container">
-        <div className="row mt-5">
+        <div className="row mt-5 pt-5">
           <h2>References</h2>
         </div>
         <div className="row">

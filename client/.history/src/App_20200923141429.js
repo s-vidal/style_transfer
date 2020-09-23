@@ -73,7 +73,7 @@ function App() {
         </div>
       </div>
       <div className="container">
-        <div className="row mt-5">
+        <div className="row mt-5 pt-5">
           <h2>References</h2>
         </div>
         <div className="row">

@@ -31,20 +31,13 @@ function App() {
         </div>
       </div>
       <div className="vh-70">
-        <div className="container pt-5">
-          <div className="row d-flex justify-content-center mt-5">
-            <button className="btn btn-danger pl-5 pr-5 pt-2 pb-2">
-              Try it Out
-            </button>
-          </div>
-        </div>
-        <div className="container pb-5">
+        <div className="container">
           <div className="row pt-5">
             <h2>Explenation</h2>
           </div>
-          <div className="row pt-5">
+          <div className="row pt-2">
             <p>
-              From The authors: "...we present a method which combines the
+              From The authors: "we present a method which combines the
               flexibility of the neural algorithm of artistic style with the
               speed of fast style transfer networks to allow real-time
               stylization using any content/style image pair. We build upon
@@ -57,42 +50,29 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="container pb-5">
+        <div className="container"></div>
+        <div className="container">
           <div className="row pt-5">
             <h2>Example</h2>
-          </div>
-          <div className="row d-flex justify-content-center shadow p-5 mb-5 mt-5 rounded">
-            <img
-              className="ml-2"
-              src={require("./img/turtle.png")}
-              alt="tf"
-              width="900"
-              height="300"
-            ></img>
           </div>
         </div>
       </div>
       <div className="container">
-        <div className="row mt-5">
+        <div className="row">
           <h2>References</h2>
         </div>
         <div className="row">
-          <p className="m-0">
+          <p>
             [1] Golnaz Ghiasi, Honglak Lee, Manjunath Kudlur, Vincent Dumoulin,
-            Jonathon Shlens.
-          </p>
-          <a href="https://arxiv.org/abs/1705.06830">
-            Exploring the structure of a real-time, arbitrary neural artistic
-            stylization network.
-          </a>
-          <p className="ml-2">
-            Proceedings of the British Machine Vision Conference (BMVC), 2017.
+            Jonathon Shlens. Exploring the structure of a real-time, arbitrary
+            neural artistic stylization network. Proceedings of the British
+            Machine Vision Conference (BMVC), 2017.
           </p>
         </div>
       </div>
       <div className="text-white bg-dark">
         <div className="container">
-          <div className="row p-2 mt-4">
+          <div className="row p-2">
             <p className="mr-4">lisence MIT</p>
             <p>Open Source Code:</p>
             <a
