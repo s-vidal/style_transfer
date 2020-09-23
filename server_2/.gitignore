@@ -17,3 +17,5 @@ hub_module/
 hub_module*
 
 __pycache__
+
+algo.pyc

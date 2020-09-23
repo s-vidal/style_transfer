@@ -37,6 +37,8 @@ def save_tensor_as_image(stylized_image):
         img = numpy_array.reshape(tuple(list_shape))
         plt.imshow(img, interpolation='nearest')
         plt.axis('off')
-        plt.savefig('stylized_imgs/test_7.png', transparent=True, pad_inches=0)
+        print("start saving file")
+        plt.savefig('stylized_imgs/test_3.png', transparent=True, pad_inches=0)
+        print("finished saving file")
     except Exception as e:
         raise e
