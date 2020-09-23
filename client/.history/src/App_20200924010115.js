@@ -1,11 +1,16 @@
-import React, {useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import "./App.css";
 import DropZone from "./components/DropZone";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+const useMountEffect = (fun) => useEffect(fun, []);
 
 function App() {
-  const tryOutref = useRef(null);
+  const [tryOut, setTryOut] = useState(false);
+
+  const myRef = useRef(null);
+
+  useMountEffect(() => scrollToRef(myRef)); // Scroll on mount
 
   return (
     <div>
@@ -35,18 +40,29 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="vh-70 p-5 pb-0">
+      <div className="vh-70 p-5">
         <div className="container pt-4 mt-5">
           <div className="row d-flex justify-content-center">
             <button
               className="btn btn-danger pl-5 pr-5 pt-2 pb-2"
-              onClick={() => scrollToRef(tryOutref)}
+              onClick={() => {
+                setTryOut(!tryOut);
+              }}
             >
               Try it Out
             </button>
           </div>
         </div>
-        <div className="container pb-5 mb-5 pt-5">
+        {tryOut && (
+          <div className="container mt-5 p-5 shadow rounded mb-5 pb-4">
+            <div className="row d-flex justify-content-center pt-5  ">
+              <DropZone />
+              <h1 className="p-5">+</h1>
+              <DropZone />
+            </div>
+          </div>
+        )}
+        <div className="container pb-5">
           <div className="row pt-4">
             <h2>Explenation</h2>
           </div>
@@ -83,18 +99,6 @@ function App() {
               width="100%"
               height="auto"
             ></img>
-          </div>
-        </div>
-      </div>
-      <div className="container p-0 pb-5 mb-5" ref={tryOutref}>
-        <div className="row">
-          <h2 className="ml-3 mb-3">Try it out</h2>
-        </div>
-        <div className="mt-3 p-5 shadow rounded mb-5 pb-4">
-          <div className="row d-flex justify-content-center pt-5">
-            <DropZone />
-            <h1 className="p-5">+</h1>
-            <DropZone />
           </div>
         </div>
       </div>

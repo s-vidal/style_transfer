@@ -1,11 +1,13 @@
-import React, {useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import "./App.css";
 import DropZone from "./components/DropZone";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+const useMountEffect = (fun) => useEffect(fun, []);
 
 function App() {
   const tryOutref = useRef(null);
+  useMountEffect(() => scrollToRef(tryOutref));
 
   return (
     <div>
@@ -86,7 +88,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container p-0 pb-5 mb-5" ref={tryOutref}>
+      <div className="container p-0 pb-5 mb-5" ref={myRef}>
         <div className="row">
           <h2 className="ml-3 mb-3">Try it out</h2>
         </div>

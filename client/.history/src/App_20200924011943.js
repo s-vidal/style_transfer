@@ -1,11 +1,13 @@
-import React, {useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import "./App.css";
 import DropZone from "./components/DropZone";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+// const useMountEffect = (ref) => useEffect(ref, []);
 
 function App() {
   const tryOutref = useRef(null);
+  // useMountEffect(() => scrollToRef(tryOutref));
 
   return (
     <div>
