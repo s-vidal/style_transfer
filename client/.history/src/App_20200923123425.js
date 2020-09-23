@@ -20,13 +20,7 @@ function App() {
               <h5>"magenta/arbitrary-image-stylization-v1-256"</h5>
             </a>
             <h5>model</h5>
-            <img
-              className="ml-2"
-              src={require("./img/tf_logo.png")}
-              alt="tf"
-              width="22"
-              height="22"
-            ></img>
+            <img></img>
           </div>
         </div>
       </div>

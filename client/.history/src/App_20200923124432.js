@@ -5,7 +5,13 @@ function App() {
   return (
     <div>
       <div className="bg-dark text-white pt-5 pb-5">
-        <div className="ml-5"> ~LOGO~ </div>
+        {/* <img
+          className="ml-5"
+          src={require("./img/my_logo.png")}
+          alt="tf"
+          width="80"
+          height="80"
+        ></img> */}
         <div className="container">
           <div className="row">
             <h1>Image Style Transfer</h1>
@@ -21,7 +27,7 @@ function App() {
             </a>
             <h5>model</h5>
             <img
-              className="ml-2"
+              className="ml-1"
               src={require("./img/tf_logo.png")}
               alt="tf"
               width="22"

@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <div className="bg-dark text-white pt-5 pb-5">
-        <div className="ml-5"> ~LOGO~ </div>
+        <div> ~LOGO~</div>
         <div className="container">
           <div className="row">
             <h1>Image Style Transfer</h1>
@@ -20,13 +20,6 @@ function App() {
               <h5>"magenta/arbitrary-image-stylization-v1-256"</h5>
             </a>
             <h5>model</h5>
-            <img
-              className="ml-2"
-              src={require("./img/tf_logo.png")}
-              alt="tf"
-              width="22"
-              height="22"
-            ></img>
           </div>
         </div>
       </div>

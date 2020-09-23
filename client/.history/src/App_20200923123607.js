@@ -21,11 +21,11 @@ function App() {
             </a>
             <h5>model</h5>
             <img
-              className="ml-2"
+              className=""
               src={require("./img/tf_logo.png")}
               alt="tf"
-              width="22"
-              height="22"
+              width="25"
+              height="25"
             ></img>
           </div>
         </div>
