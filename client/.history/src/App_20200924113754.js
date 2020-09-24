@@ -2,7 +2,6 @@ import React, {useRef} from "react";
 import "./App.css";
 import DropZone from "./components/DropZone";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
@@ -93,7 +92,23 @@ function App() {
           </p>
         </div>
       </div>
-      <Footer />
+      <div className="text-white bg-dark">
+        <div className="container mt-5">
+          <div className="row p-2 mt-4">
+            <p className="mr-4">MIT Lisence</p>
+            <p>Open Source Code:</p>
+            <a
+              className="ml-2 text-white"
+              href="https://github.com/s-vidal/style_transfer"
+            >
+              <span>github.com/s-vidal/style_transfer</span>
+              <span role="img" aria-label="emoji" className="ml-1">
+                ❤️
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

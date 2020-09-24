@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import "./App.css";
 import DropZone from "./components/DropZone";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/"
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
