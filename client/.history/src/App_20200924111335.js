@@ -46,7 +46,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="container pb-5 mb-3 pt-3">
+        <div className="container pb-5 mb-2 pt-5">
           <div className="row pt-4">
             <h2>Description</h2>
           </div>

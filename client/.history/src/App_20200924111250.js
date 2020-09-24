@@ -36,7 +36,7 @@ function App() {
         </div>
       </div>
       <div className="vh-70 p-5 pb-0">
-        <div className="container pt-3 mt-4">
+        <div className="container pt-4 mt-5">
           <div className="row d-flex justify-content-center">
             <button
               className="btn btn-danger pl-5 pr-5 pt-2 pb-2"
@@ -46,7 +46,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="container pb-5 mb-3 pt-3">
+        <div className="container pb-5 mb-3 pt-5">
           <div className="row pt-4">
             <h2>Description</h2>
           </div>

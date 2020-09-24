@@ -92,7 +92,7 @@ function Dropzone(props) {
         }}
       >
         <input {...getInputProps()} />
-        <p className="">Click or drag 'n' drop to select image</p>
+        <p className="">Click or drag 'n' drop  to select image</p>
       </div>
       <aside
         className="d-flex justify-content-center align-items-center mt-5 mb-5"
