@@ -68,19 +68,19 @@ function App() {
       </div>
       <div className="container p-0 pb-5 mb-5" ref={tryOutref}>
         <div className="row">
-          <h2 className="ml-3 mb-3">Try it out</h2>
+          <h2 className="ml-3 mb-3 pl-2">Try it out</h2>
         </div>
         <div className="mt-3 p-5 shadow rounded mb-5 pb-4">
           <div className="row d-flex justify-content-center pt-5">
-            <DropZone header={"Image to transform"} />
-            <h2 className="p-5 mt-5">+</h2>
-            <DropZone header={"Style image"} />
+            <DropZone />
+            <h1 className="p-5">+</h1>
+            <DropZone />
           </div>
         </div>
       </div>
       <div className="container mb-5 pb-2">
         <div className="row">
-          <h2>References</h2>
+          <h2>Reference</h2>
         </div>
         <div className="row">
           <p className="m-0">

@@ -95,7 +95,7 @@ function Dropzone(props) {
         className="bg-light p-5 mt-3"
         style={{
           cursor: "pointer",
-          border: "2px dotted green",
+          border: "2px dotted grey",
         }}
       >
         <input {...getInputProps()} />

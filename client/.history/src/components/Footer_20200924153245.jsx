@@ -13,7 +13,7 @@ const Footer = () => {
           >
             <span>github.com/s-vidal/style_transfer</span>
           </a>
-          <p className="ml-3 mr-1"> with </p>
+          <p className="ml"> with </p>
           <span role="img" aria-label="emoji" className="ml-1">
             ❤️
           </span>

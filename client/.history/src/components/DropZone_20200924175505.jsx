@@ -85,17 +85,14 @@ function Dropzone(props) {
   );
 
   return (
-    <section
-      className="text-center"
-      style={{minWidth: 300, maxWidth: 300, overflow: "hidden"}}
-    >
+    <section className="text-center">
       <h5>{props.header}</h5>
       <div
         {...getRootProps({className: "dropzone"})}
         className="bg-light p-5 mt-3"
         style={{
           cursor: "pointer",
-          border: "2px dotted green",
+          border: "2px dotted grey",
         }}
       >
         <input {...getInputProps()} />

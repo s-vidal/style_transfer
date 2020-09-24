@@ -80,7 +80,7 @@ function App() {
       </div>
       <div className="container mb-5 pb-2">
         <div className="row">
-          <h2>References</h2>
+          <h2>Reference</h2>
         </div>
         <div className="row">
           <p className="m-0">

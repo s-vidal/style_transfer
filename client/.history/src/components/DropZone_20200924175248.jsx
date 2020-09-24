@@ -28,11 +28,8 @@ const thumbInner = {
 
 const img = {
   display: "block",
-  maxWidth: "100%",
-  maxHeight: "100%",
-  margin: "auto",
-  // width: "100%",
-  // height: "auto",
+  width: "100%",
+  height: "auto",
 };
 
 function Dropzone(props) {
@@ -95,7 +92,7 @@ function Dropzone(props) {
         className="bg-light p-5 mt-3"
         style={{
           cursor: "pointer",
-          border: "2px dotted green",
+          border: "2px dotted grey",
         }}
       >
         <input {...getInputProps()} />

@@ -6,6 +6,7 @@ const thumbsContainer = {
   flexDirection: "row",
   flexWrap: "wrap",
   marginTop: 16,
+  maxWidth: 33%,
 };
 
 const thumb = {
@@ -28,11 +29,8 @@ const thumbInner = {
 
 const img = {
   display: "block",
-  maxWidth: "100%",
-  maxHeight: "100%",
-  margin: "auto",
-  // width: "100%",
-  // height: "auto",
+  width: "auto",
+  height: "100%",
 };
 
 function Dropzone(props) {
@@ -85,17 +83,14 @@ function Dropzone(props) {
   );
 
   return (
-    <section
-      className="text-center"
-      style={{minWidth: 300, maxWidth: 300, overflow: "hidden"}}
-    >
+    <section className="text-center">
       <h5>{props.header}</h5>
       <div
         {...getRootProps({className: "dropzone"})}
         className="bg-light p-5 mt-3"
         style={{
           cursor: "pointer",
-          border: "2px dotted green",
+          border: "2px dotted grey",
         }}
       >
         <input {...getInputProps()} />
