@@ -50,7 +50,7 @@ function Dropzone(props) {
           // Do whatever you want with the file contents
           const arrayBuffer = reader.result;
           props.setImage(arrayBuffer);
-          // console.log(arrayBuffer);
+          console.log(arrayBuffer);
         };
         reader.readAsArrayBuffer(file);
       });

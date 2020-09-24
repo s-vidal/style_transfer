@@ -9,11 +9,7 @@ const Inference = () => {
   const handleOnClick = async () => {
     if (imageOne && imageTwo) {
       console.log(imageOne, imageTwo);
-      const stylisedImage = await transferImages({
-        imageOne: imageOne,
-        imageTwo: imageTwo,
-      });
-      console.log(stylisedImage);
+      const stylisedImage = await transferImages();
     }
   };
 

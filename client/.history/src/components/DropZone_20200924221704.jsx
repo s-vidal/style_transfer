@@ -49,8 +49,8 @@ function Dropzone(props) {
         reader.onload = () => {
           // Do whatever you want with the file contents
           const arrayBuffer = reader.result;
-          props.setImage(arrayBuffer);
-          // console.log(arrayBuffer);
+          props.
+          console.log(arrayBuffer);
         };
         reader.readAsArrayBuffer(file);
       });

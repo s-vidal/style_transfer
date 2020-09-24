@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import DropZone from "./DropZone";
-import {transferImages} from "../lib/api";
+import transferImages from "../lib/api";
 
 const Inference = () => {
   const [imageOne, setImageOne] = useState();
@@ -9,11 +9,7 @@ const Inference = () => {
   const handleOnClick = async () => {
     if (imageOne && imageTwo) {
       console.log(imageOne, imageTwo);
-      const stylisedImage = await transferImages({
-        imageOne: imageOne,
-        imageTwo: imageTwo,
-      });
-      console.log(stylisedImage);
+      awatransferImages;
     }
   };
 

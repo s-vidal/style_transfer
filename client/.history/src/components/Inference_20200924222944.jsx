@@ -1,19 +1,15 @@
 import React, {useState} from "react";
 import DropZone from "./DropZone";
-import {transferImages} from "../lib/api";
+import transferImages from 
 
 const Inference = () => {
   const [imageOne, setImageOne] = useState();
   const [imageTwo, setImageTwo] = useState();
 
-  const handleOnClick = async () => {
+  const handleOnClick = () => {
     if (imageOne && imageTwo) {
       console.log(imageOne, imageTwo);
-      const stylisedImage = await transferImages({
-        imageOne: imageOne,
-        imageTwo: imageTwo,
-      });
-      console.log(stylisedImage);
+
     }
   };
 

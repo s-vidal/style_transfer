@@ -1,19 +1,13 @@
 import React, {useState} from "react";
 import DropZone from "./DropZone";
-import {transferImages} from "../lib/api";
 
 const Inference = () => {
   const [imageOne, setImageOne] = useState();
   const [imageTwo, setImageTwo] = useState();
 
-  const handleOnClick = async () => {
+  const handleOnClick = () => {
     if (imageOne && imageTwo) {
       console.log(imageOne, imageTwo);
-      const stylisedImage = await transferImages({
-        imageOne: imageOne,
-        imageTwo: imageTwo,
-      });
-      console.log(stylisedImage);
     }
   };
 
@@ -27,7 +21,7 @@ const Inference = () => {
       <div className="row d-flex justify-content-center">
         <button
           type="button"
-          disabled={!imageTwo && !imageTwo}
+          disabled
           onClick={handleOnClick}
           className="btn btn-success pl-5 pr-5 p-2 mt-3 mb-5"
         >
