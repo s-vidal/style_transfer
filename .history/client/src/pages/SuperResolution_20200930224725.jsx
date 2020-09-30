@@ -17,12 +17,11 @@ const SuperResolution = () => {
             <div className="row mt-3">
               <h5>Using Tonsorflow Hub's </h5>
               <a
-                href="https://tfhub.dev/captain-pool/esrgan-tf2/1"
+                href="https://www.tensorflow.org/hub/tutorials/image_enhancing"
                 className="pl-1 pr-1 text-white"
               >
                 <h5>"esrgan-tf2"</h5>
               </a>
-              <h5>model</h5>
               <img
                 className="ml-3"
                 src={require("../img/tf_logo.png")}

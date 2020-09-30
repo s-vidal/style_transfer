@@ -31,6 +31,8 @@ const img = {
   maxWidth: "100%",
   maxHeight: "100%",
   margin: "auto",
+  // width: "100%",
+  // height: "auto",
 };
 
 function Dropzone(props) {
@@ -40,6 +42,16 @@ function Dropzone(props) {
     onDrop: (acceptedFiles) => {
       acceptedFiles.forEach((file) => {
         props.setImage(file);
+        // const reader = new FileReader();
+
+        // reader.onabort = () => console.log("file reading was aborted");
+        // reader.onerror = () => console.log("file reading has failed");
+        // reader.onload = () => {
+        //   // Do whatever you want with the file contents
+        //   const arrayBuffer = reader.result;
+
+        // };
+        // reader.readAsArrayBuffer(file);
       });
       setFiles(
         acceptedFiles.map((file) =>

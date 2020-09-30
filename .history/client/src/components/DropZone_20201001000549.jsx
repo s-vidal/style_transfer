@@ -31,6 +31,8 @@ const img = {
   maxWidth: "100%",
   maxHeight: "100%",
   margin: "auto",
+  // width: "100%",
+  // height: "auto",
 };
 
 function Dropzone(props) {

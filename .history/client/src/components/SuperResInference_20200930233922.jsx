@@ -71,7 +71,7 @@ const SuperResInference = () => {
           <div className="row d-flex justify-content-center m-0">
             <a
               href={URL.createObjectURL(binaryImage)}
-              download="super_res_img.jpeg"
+              download="super_res.png"
             >
               <h4>Download</h4>
             </a>

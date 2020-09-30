@@ -23,7 +23,7 @@ export const getSuperResImg = async (image) => {
   formData.append("image", image);
   let response = await axios({
     method: "post",
-    url: `http://0.0.0.0:5000/super_res`,
+    url: `http://0.0.0.0:5000/super_res",
     data: formData,
     headers: {"Content-Type": "multipart/form-data"},
     responseType: "blob",
