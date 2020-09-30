@@ -41,17 +41,18 @@ function Dropzone(props) {
     accept: "image/*",
     onDrop: (acceptedFiles) => {
       acceptedFiles.forEach((file) => {
-        props.setImage(file);
-        // const reader = new FileReader();
+        console.log(file);
+        const reader = new FileReader();
 
-        // reader.onabort = () => console.log("file reading was aborted");
-        // reader.onerror = () => console.log("file reading has failed");
-        // reader.onload = () => {
-        //   // Do whatever you want with the file contents
-        //   const arrayBuffer = reader.result;
-
-        // };
-        // reader.readAsArrayBuffer(file);
+        reader.onabort = () => console.log("file reading was aborted");
+        reader.onerror = () => console.log("file reading has failed");
+        reader.onload = () => {
+          // Do whatever you want with the file contents
+          const arrayBuffer = reader.result;
+          props.setImage(arrayBuffer);
+          // console.log(arrayBuffer);
+        };
+        reader.readAsArrayBuffer(file);
       });
       setFiles(
         acceptedFiles.map((file) =>

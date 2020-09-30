@@ -6,8 +6,8 @@ import tensorflow_hub as hub
 
 def style_transfer(content_image_path, style_image_path):
     try:
-        content_image_path = "images/uploaded_images/image_one.jpg"
-        style_image_path = "images/uploaded_images/image_two.jpg"
+        content_image_path = "images/rnd_imgs/trump.jpg"
+        style_image_path = "images/style_imgs/wave.jpg"
 
         content_image = plt.imread(content_image_path)
         style_image = plt.imread(style_image_path)
@@ -38,7 +38,7 @@ def save_tensor_as_image(stylized_image):
         plt.imshow(img, interpolation='nearest')
         plt.axis('off')
         print("start saving file")
-        plt.savefig('stylized_imgs/stylized_image.png', transparent=True, pad_inches=0)
+        plt.savefig('stylized_imgs/test_3.png', transparent=True, pad_inches=0)
         print("finished saving file")
     except Exception as e:
         raise e
