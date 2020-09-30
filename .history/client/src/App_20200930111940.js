@@ -2,19 +2,18 @@ import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import "./App.css";
 import StyleTransfer from "./pages/StyleTransfer";
-import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Router>
-        {/* <NavBar /> */}
+        <NavBar />
         <Switch>
-          <Route path="/home-page">
-            <div></div>
+          <Route path="/style-transfer">
+            <StyleTransfer />
           </Route>
           <Route path="/">
-            <StyleTransfer />
+            <HomePage setRunTraining={setRunTraining} />
           </Route>
         </Switch>
         <Footer />

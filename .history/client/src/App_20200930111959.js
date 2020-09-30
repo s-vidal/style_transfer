@@ -2,7 +2,6 @@ import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import "./App.css";
 import StyleTransfer from "./pages/StyleTransfer";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,11 +9,11 @@ function App() {
       <Router>
         {/* <NavBar /> */}
         <Switch>
-          <Route path="/home-page">
-            <div></div>
-          </Route>
           <Route path="/">
             <StyleTransfer />
+          </Route>
+          <Route path="/">
+            <HomePage setRunTraining={setRunTraining} />
           </Route>
         </Switch>
         <Footer />
