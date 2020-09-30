@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import StyleTransfer from "./pages/StyleTransfer";
+import StyleTransfer from "./pages/style_transfer";
 
 function App() {
   return (
