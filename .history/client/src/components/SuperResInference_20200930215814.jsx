@@ -1,43 +1,40 @@
 import React, {useState, useRef} from "react";
 import DropZone from "./DropZone";
-import {transferImages} from "../lib/api";
+import {getSuperResImg} from "../lib/api";
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 400);
+const SuperResInference = () => {
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 400);
 
-const Inference = () => {
   const [imageOne, setImageOne] = useState();
-  const [imageTwo, setImageTwo] = useState();
   const [binaryImage, setBinaryImage] = useState("");
   const [showSpinner, setShowSpinner] = useState(false);
 
-  const stylizedImg = useRef(null);
+  const superResImg = useRef(null);
 
   const handleOnClick = async () => {
-    if (imageOne && imageTwo) {
+    if (imageOne) {
       setBinaryImage(false);
       setShowSpinner(true);
-      const binaryImage = await transferImages([imageOne, imageTwo]);
+      const binaryImage = await getSuperResImg(imageOne);
       setShowSpinner(false);
       setBinaryImage(binaryImage);
-      scrollToRef(stylizedImg);
+      scrollToRef(superResImg);
     }
   };
 
   return (
-    <div className="mt-3 p-5 shadow rounded mb-5 pb-4">
-      <div className="row d-flex justify-content-center pt-5">
-        <DropZone header={"Image to transform"} setImage={setImageOne} />
-        <h2 className="p-5 mt-5">+</h2>
-        <DropZone header={"Style image"} setImage={setImageTwo} />
+    <div className="mt-3 p-4 shadow rounded mb-5 pb-4">
+      <div className="row d-flex justify-content-center pt-1">
+        <DropZone header={"Low Resolution image"} setImage={setImageOne} />
       </div>
       <div className="row d-flex justify-content-center">
         <button
           type="button"
-          disabled={!imageOne && !imageTwo}
+          disabled={!imageOne}
           onClick={handleOnClick}
           className="btn btn-success pl-5 pr-5 p-2 mt-3"
         >
-          Stylize!
+          Get Super Res!
         </button>
       </div>
       {showSpinner && (
@@ -49,7 +46,7 @@ const Inference = () => {
       )}
       {binaryImage && (
         <div
-          ref={stylizedImg}
+          ref={superResImg}
           className="row d-flex justify-content-center mt-5"
         >
           <h1 role="img" aria-label="emoji" className="ml-1" alt="arrow">
@@ -59,21 +56,15 @@ const Inference = () => {
       )}
       {binaryImage && (
         <>
-          <div
-            className="row d-flex justify-content-center m-0"
-
-            // style={{minWidth: 500, maxWidth: 500}}
-          >
+          <div className="row d-flex justify-content-center m-0">
             <img
               className="m-5"
               height={250}
               width="auto"
               src={URL.createObjectURL(binaryImage)}
               style={{
-                // display: "block",
                 maxWidth: "100%",
                 maxHeight: "100%",
-                // margin: "auto",
               }}
             />
           </div>
@@ -91,4 +82,4 @@ const Inference = () => {
   );
 };
 
-export default Inference;
+export default SuperResInference;

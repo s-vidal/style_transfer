@@ -102,8 +102,8 @@ const SuperResolution = () => {
         <div className="container p-0 pb-5 mb-5" ref={tryOutref}>
           <div className="row">
             <h2 className="ml-3 mb-3">Try it out</h2>
+            <SuperResInference />
           </div>
-          <SuperResInference />
         </div>
         <div className="container mb-5 pb-2">
           <div className="row">

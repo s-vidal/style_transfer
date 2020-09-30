@@ -17,17 +17,4 @@ export const transferImages = async (images) => {
   return binary_image;
 };
 
-export const getSuperResImg = async (image) => {
-  // sends as <FileStorage>
-  const formData = new FormData();
-  formData.append("image", image);
-  let response = await axios({
-    method: "post",
-    url: `http://0.0.0.0:5000/superRes`,
-    data: formData,
-    headers: {"Content-Type": "multipart/form-data"},
-    responseType: "blob",
-  });
-  const binary_image = response.data;
-  return binary_image;
-};
+export const getSuperResImg

@@ -2,13 +2,11 @@ import matplotlib.pylab as plt
 import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
+from flask import current_app
 
 
 def style_transfer(content_image_path, style_image_path):
     try:
-        content_image_path = "images/uploaded_images/image_one.jpg"
-        style_image_path = "images/uploaded_images/image_two.jpg"
-
         content_image = plt.imread(content_image_path)
         style_image = plt.imread(style_image_path)
         content_image = content_image.astype(np.float32)[np.newaxis, ...] / 255.
@@ -38,7 +36,8 @@ def save_tensor_as_image(stylized_image):
         plt.imshow(img, interpolation='nearest')
         plt.axis('off')
         print("start saving file")
-        plt.savefig('stylized_imgs/stylized_image.png', bbox_inches='tight', pad_inches=0)
+        plt.savefig(current_app.config["STYLE_STYLIZED_IMG"], bbox_inches='tight', pad_inches=0)
         print("finished saving file")
     except Exception as e:
         raise e
+

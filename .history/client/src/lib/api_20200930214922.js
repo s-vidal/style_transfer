@@ -20,10 +20,11 @@ export const transferImages = async (images) => {
 export const getSuperResImg = async (image) => {
   // sends as <FileStorage>
   const formData = new FormData();
-  formData.append("image", image);
+  formData.append("image_one", images);
+  formData.append("image_two", images[1]);
   let response = await axios({
     method: "post",
-    url: `http://0.0.0.0:5000/superRes`,
+    url: `http://0.0.0.0:5000/stylize`,
     data: formData,
     headers: {"Content-Type": "multipart/form-data"},
     responseType: "blob",
