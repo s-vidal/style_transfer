@@ -44,7 +44,7 @@ const HomePage = () => {
               }}
             >
               <img
-                className="m-5"
+                className="m-3"
                 height={250}
                 width="auto"
                 src={require("../img/style_transfer_logo.png")}
@@ -65,7 +65,7 @@ const HomePage = () => {
               }}
             >
               <img
-                className="m-5"
+                className="m-3"
                 height={250}
                 width="auto"
                 src={require("../img/super_res_logo_crop.png")}

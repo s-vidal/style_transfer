@@ -56,7 +56,7 @@ const HomePage = () => {
             </div>
             <p className="text-right pt-2 source">[1]</p>
           </div>
-          <div className="m-5 mb-0 pl-3">
+          <div className="m-5 mb-0 pl-2">
             <h5 className="text-center pb-2"> Super Resolution</h5>
             <div
               className="home-item shadow"

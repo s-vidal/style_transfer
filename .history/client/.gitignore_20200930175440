@@ -13,7 +13,7 @@
 
 ../.history
 ../.history/
-../.history*
+/.history*
 
 # misc
 .DS_Store

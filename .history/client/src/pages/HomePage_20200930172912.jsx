@@ -38,13 +38,13 @@ const HomePage = () => {
           <div className="mt-5 mb-0 pr-3">
             <h5 className="text-center pb-2">Style Transfer</h5>
             <div
-              className="home-item shadow"
+              className="home-item shadow d-flex justify-content-center align-items-center"
               onClick={() => {
                 history.push("/style-transfer");
               }}
             >
               <img
-                className="m-5"
+                className="m-3"
                 height={250}
                 width="auto"
                 src={require("../img/style_transfer_logo.png")}
@@ -59,13 +59,13 @@ const HomePage = () => {
           <div className="m-5 mb-0 pl-3">
             <h5 className="text-center pb-2"> Super Resolution</h5>
             <div
-              className="home-item shadow"
+              className="home-item shadow d-flex justify-content-center align-items-center"
               onClick={() => {
                 history.push("/super-resolution");
               }}
             >
               <img
-                className="m-5"
+                className="m-3"
                 height={250}
                 width="auto"
                 src={require("../img/super_res_logo_crop.png")}
