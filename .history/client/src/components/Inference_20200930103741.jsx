@@ -61,12 +61,11 @@ const Inference = () => {
         <>
           <div
             className="row d-flex justify-content-center m-0"
-
+            style={{marginTop: -80}}
             // style={{minWidth: 500, maxWidth: 500}}
           >
             <img
-              className="m-5"
-              height={300}
+              height={400}
               width="auto"
               src={URL.createObjectURL(binaryImage)}
               style={{

@@ -38,7 +38,7 @@ def save_tensor_as_image(stylized_image):
         plt.imshow(img, interpolation='nearest')
         plt.axis('off')
         print("start saving file")
-        plt.savefig('stylized_imgs/stylized_image.png', transparent=True, pad_inches=0)
+        plt.savefig('stylized_imgs/stylized_image.png', bbox_inches='tight', pad_inches=0)
         print("finished saving file")
     except Exception as e:
         raise e

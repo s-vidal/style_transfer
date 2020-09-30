@@ -65,7 +65,7 @@ const Inference = () => {
             // style={{minWidth: 500, maxWidth: 500}}
           >
             <img
-              className="m-5"
+              className="p-5"
               height={300}
               width="auto"
               src={URL.createObjectURL(binaryImage)}
