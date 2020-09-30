@@ -1,0 +1,4 @@
+.nav-text:hover {
+  border-bottom: 1px solid white;
+  transition-duration: 0.5s;
+}

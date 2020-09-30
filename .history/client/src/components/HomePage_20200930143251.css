@@ -1,0 +1,9 @@
+.home-item {
+  min-width: 300px;
+  min-height: 300px;
+}
+.home-item:hover {
+  cursor: pointer;
+  min-width: 305px;
+  min-height: 305px;
+}

@@ -1,0 +1,11 @@
+.home-item {
+  min-width: 300px;
+  min-height: 300px;
+}
+.home-item:hover {
+  cursor: pointer;
+  /* transform: translate(3px, 3px); */
+  min-width: 310px;
+  min-height: 310px;
+  /* transition-duration: 0.2s; */
+}

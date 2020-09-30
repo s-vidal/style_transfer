@@ -1,0 +1,10 @@
+.home-item {
+  min-width: 300px;
+  min-height: 300px;
+}
+.home-item:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  transform: translate(3px, 3px);
+  transition-duration: 0.2s;
+}
