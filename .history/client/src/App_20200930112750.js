@@ -12,7 +12,7 @@ function App() {
         {/* <NavBar /> */}
         <Switch>
           <Route path="/super-resolution">
-            <SuperResolution />
+            <div></div>
           </Route>
           <Route path="/">
             <StyleTransfer />

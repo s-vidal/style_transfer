@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import "./App.css";
 import StyleTransfer from "./pages/StyleTransfer";
-import SuperResolution from "./pages/SuperResolution";
+import Superresolution from "./pages"
 import Footer from "./components/Footer";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <Router>
         {/* <NavBar /> */}
         <Switch>
-          <Route path="/super-resolution">
-            <SuperResolution />
+          <Route path="/home-page">
+            <div></div>
           </Route>
           <Route path="/">
             <StyleTransfer />
